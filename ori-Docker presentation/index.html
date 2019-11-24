@@ -88,6 +88,19 @@
                 </div>
     </div>
 
+
+    
+    
+    <div class="step"  data-rotate-y="25"  data-rotate-x="12">
+        
+        <img src="images/diagrams-08 - flow.svg" width="1300" height="650" 
+        style="position: inherit; top: -330px; left: -50px" />
+        <div class="arrow_up"style=" position:bottom;bottom:-300px; ;right:150px;">
+                    <h4 style="text-align:center">Docker run<strong> Flow</strong></h4>
+                </div>
+
+    </div>
+
     <div class="step">
         <h1>At scale, ops become more interesting...</h1>
         <ul>
@@ -97,14 +110,6 @@
         <li>If there's network glitch during initial sync, start from scratch</li>
         <li>Note: Manual workarounds existed to make this faster, but sometimes they can't be used (mmapv1->wiredTiger sync)</li>
         </ul>
-    </div>
-
-    <div class="step" data-rel-x="1150" data-rel-y="-500">
-        <h1>MongoDB 3.4: Faster initial sync</h1>
-        <p>Main improvement: rebuild all indexes in parallel</p>
-        <p>We test this with a 1 TB sample of a real world DB</p>
-        <p>MongoDB 3.2 initial sync: ~ 1 week</p>
-        <p>MongoDB 3.4 initial sync: &lt; 24 h</p>
     </div>
 
     <div id="balancerRecap" class="step" style="text-align: center" data-x="3500" data-y="4350" data-scale="2">
