@@ -69,10 +69,11 @@
     font-size: 60px;
 }
 
-#demo {
-    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 14px 15px 16px rgba(0,0,0,0); 
-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 14px 15px 16px rgba(0,0,0,0);
-    margin-top: 120px;    
+#demos {
+    -webkit-box-shadow: 100px 15px 15px 10px #000000, inset 14px 14px 115px 110px #000000, 15px 114px 115px 116px rgba(0,0,0,0); 
+box-shadow: 15px 15px 51px 10px #000000, inset 4px 4px 15px 0px #000000, 5px 14px 15px 16px rgba(0,0,0,0);
+    margin-top: 160px;
+    height:130px    
 }
 #big {
     width: 600px;
@@ -91,6 +92,61 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 14px 15
     font-size: 90px;
     line-height: 150px;
 }
+
+.big {
+    width: 600px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.big b {
+    display: block;
+    font-size: 250px;
+    line-height: 250px;
+}
+
+.big .thoughts {
+    font-size: 90px;
+    line-height: 150px;
+}
+
+.quotation{
+    font-size: 30px;
+    //margin: 0 auto;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 10px 20px;
+    line-height: 1.4;
+  }
+  
+  .quotation:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 30px;
+    color: #ccc;
+    font-size: 3em;
+  }
+  .quotation::after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 10px;
+    position: relative;
+    top: 35px;
+    color: #ccc;
+    font-size: 3em;
+  }
+  footer{
+    margin:0;
+    text-align: right;
+    font-size: 1.5em;
+    font-style: italic;
+  }
 .arrow {
     border: 3px solid #97d4e8;
     border-radius: 4px;
