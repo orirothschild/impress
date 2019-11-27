@@ -800,7 +800,7 @@ body.impress-mouse-timeout {
 .bodys {
     font-family: 'PT Sans', sans-serif;
     min-height:1000px;
-    min-width: 1400px;
+    min-width: 1000px;
     align-content: inherit;
     background: rgb(255, 255, 255);
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 255, 255)), to(rgb(255, 255, 255)));
