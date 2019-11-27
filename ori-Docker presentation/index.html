@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Docker..What Are You? | by Ori Rothschild</title>
     
-    <meta name="author" content="Henrik Ingo" />
+    <meta name="author" content="Ori Rothschild" />
     <link href="css/classic-slides.css" rel="stylesheet" />
     
 </head>
@@ -24,54 +24,60 @@
             
     </div>
     
-    <div class="step title" data-x="-1750" data-y="5200" data-scale="2.5" id="title">
+    <div class="step title"  data-x="-1750" data-y="5200" data-scale="2.5" id="title" data-transition-duration="2000" data-autoplay="7">
         <h1>What is it, exactly?</h1>
         <h2>by Ori Rothschild<br /><br />
         <br />
         </h2>
-        <p style="text-align: right;"><small>v2</small></p>
     </div>
      
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="-1" data-scale="10" data-autoplay="0.1">
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="-1" data-scale="10" data-autoplay="0.1" data-transition-duration="1500">
     </div>
 
     <div class="step" data-x="650" data-y="5000" data-rotate-y="0" data-scale="1"
          id="topics">
-        <h1>The questions we shall tackle</h1>
-        <ol>
+        <h1 style="margin-left:-550px ">The questions we shall tackle</h1>
+        <ul>
             <li>What is Docker?</li>
             <li>Why use it?</li>
             <li>How does it work?</li>
-        </ol>
+        </ul>
     </div>
 
-    <div class="step" id="compression"  data-x="100" data-y="8000" data-scale="2">
+    <div class="step" id="compression"  data-x="-400" data-y="8000" data-scale="2">
             <blockquote><p class="quotation"> 
-                   Docker is an Amazing Tool,anyone who uses it is garrenteed succsess</p>
-                  <footer>— Ori Rothschild</footer>
+                   Docker is an Amazing Tool,anyone who uses it is guaranteed succsess</p>
+                  <footer>— Ori Rothschild 2019</footer>
                   </blockquote> 
                   <blockquote><p class="quotation"> 
                        i once said the word Docker in a meeting,everyone was so impressed i was instantly made CEO</p>
-                       <footer>— O.R</footer>
-                       </blockquote> 
+                       <footer>- O.R 2019</footer>
+                       </blockquote>
                        <blockquote><p class="quotation"> 
-                            i used the word Docker at the bar,guess who got lucky?</p>
-                            <footer>— some dude who got lucky</footer>
+                         Docker is the The best thing since sliced bread </p>
+                            <footer>— guy who invented sliced bread </footer>
+                            </blockquote> 
+                       <blockquote><p class="quotation"> 
+                           dont believe everything you read on the internet just becouse they qoute my name next to it</p>
+                            <footer>-Albert Einstein</footer>
                             </blockquote> 
     </div>
     
-    <div id="big" class="step" data-x="5000" data-y="10500" data-z="100" data-scale="20">
-            <h5>Docker makes a  <b>big</b><p> statement </p> </h5>
-            <h3>if it runs on my machine, it will run on yours</h3>
+    <div id="big" class="step" data-x="5000" data-y="11500" data-z="100" data-scale="20">
+            <div  class="substep">
+                   
+                <h5 >Docker makes a  <b>big</b><p> statement </p> </h5>
+                <h3>if it runs on my machine, it will run on yours</h3>
+            </div>
         </div>
 
-        <div class="step" data-x="3150" data-y="8000"  data-scale="1"  id="demo"  >
+        <div class="step" data-x="3150" data-y="9200"  data-scale="1"  id="demo"  >
           <h2 >In a nutshell, here's what Docker can do for you </h2>
 
           <ul class="substep"  data-autoplay="1.2">
                 <li>it makes it easy for developers to quickly create ready-to-run containered applications; and it makes managing and deploying applications easy.</li>
                 <li>  it  makes it easier to create, deploy, and run applications by using containers. </li>
-                                    <li> Containers allow a developer to package up an application with all of the parts it needs such as libraries and other dependencies</li>
+                <li> Containers allow a developer to package up an application with all of the parts it needs such as libraries and other dependencies</li>
                 </ul>
     </div>
 
@@ -85,22 +91,29 @@
 
         
         <img src="images/diagrams-05 - redis.png" width="700" height="550" 
-            style="position: inherit; top: -420px; left: 350px" />
+            style="position: inherit; top: -420px; left: 350px" ;
+            />
         <img src="images/eco.jpg"  width="400" height="300"
         style="position: inherit; top: 170px; left: 300px" />
 
     </div>
-    <div class="step" data-rel-z="10000" data-rel-y="0" data-scale="1.2">
-            <div class="arrow_down" position="relative">
-                    <h4 style="text-align:center">Docker <strong>Client</strong><p>tool that we are going to issue commands to</p></h4>
+    <div class="step"  data-rel-z="10000" data-rel-x="-1000" data-scale="1.2">
+        <div class ="bodys">
+        <div class="substep" id="bored">
+       
+            <div   class="arrow_down" position="relative">
+                    <h4 style="text-align:center" >Docker <strong>Client</strong><p>tool that we are going to issue commands to</p></h4>
                 </div>
 
-            <div class="arrow_up"margin-top="12px"position="-600px">
+                <div class="arrow_up"margin-top="12px"position="-600px">
                     <h4 style="text-align:center">Docker <strong>Deamon</strong><p>tool that is responsible for running images,containers,etc</p></h4>
                 </div>
+            </div>
+            </div>
     </div>
     
     <div class="step" style="text-align: center"data-rel-z="2000" data-rel-x="-2000" data-rel-y="0" data-rotate-y="90" data-scale="0.8">
+            <div class="substep">
               <div id="imagination" data-scale="2">
           <p>the single file with all the dependencies and configurations required to run a program is called an <b>image</b></p>
             </div>
@@ -111,7 +124,7 @@
                     <div id="demos" data-rel-z="10" data-x="3350" data-y="100000"  ><h4 style="text-align:bottom;margin-top: 100px"><br /> node.js Container </h4></div>
                         <p style="text-align: center; margin-top:50px">an instance of a created image is called a  <b>Container</b></p>
                           </div>
-            
+                        </div>
            </div>
 
 
@@ -119,33 +132,34 @@
     
     
     <div class="step" data-rel-z="1000" data-rel-x="1000" data-rel-y="000" data-scale="0.8" data-rotate-y="180"  data-rotate-x="12">
-        
+            <div class="substep">
         <img src="images/diagrams-08 - flow (1).svg" width="1300" height="650" 
         style="position: inherit; top: -330px; left: -50px" />
         <div class="arrow_up"style=" position:bottom;bottom:-300px; ;right:150px;">
                     <h4 style="text-align:center">Docker run<strong> Flow</strong></h4>
                 </div>
-
+            </div>
     </div>
 
     
 
-    <div class="step" id="singleton" data-rel-z="-1000" data-rel-x="1600" data-rel-y="000" data-rotate-y="270" data-scale="2">
+    <div class="step" id="singleton" data-rel-z="3000" data-rel-x="1600" data-rel-y="000" data-rotate-y="-70" data-scale="2">
+            <div class="substep">
             <h1 style="position:fixed; top: -290px; left:200px" >a Quick View Of our Operation System</h1>
             <img width="1000" src="images/diagrams-09 - kernel.png"   style="position:fixed; top: -140px; left: 0px"
                  class="right" />
-    
+                </div>
             
         </div>
     
        
     
-        <div class="step title" id="throttling" data-rel-z="13000" data-rotate="-90" data-x="1500" data-y="4200" data-scale="3">
+        <div class="step title" id="throttling" data-rel-z="13000" data-transition-duration="1500" data-rotate="-0" data-x="1500" data-y="4200" data-scale="3">
                 <img width="790" src="images/diagrams-10 - kernel.svg"   style="position: fixed;left:120px;bottom: -300px"
                      class="right" />
         </div>
         
-            <div class="step" data-rel-z="000" data-rel-x="-300" data-rel-y="-2500" data-rotate="0">
+            <div class="step" data-rel-z="000" data-rel-x="-300" data-rel-y="-2500" data-rotate="0" data-transition-duration="2000">
                 <img width="1100" height="1200" data-rel-z="1000" src="images/diagrams-14 - container.svg"   style="position: fixed;left:70px;bottom: -500px"
                  />
                
@@ -158,109 +172,58 @@
                 />
             </div>
                             <div class="step" data-rel-z="253000" data-rel-x="-00"   data-rel-y="-50000" data-rotate="-90" data-rotate-x="10">
-                                    <h1 class="big">last   <b>boring</b><p> diagram </p> </h5>
+                                    <h1 class="big">last   <b>boring</b><p> diagram </p> </h1>
                               
                             </div>
     
         <div id="benchmark" class="step" data-rel-x="-1200" data-rel-y="-900" data-rotate="-180">
-                <div  class="step" data-rel-x="-1200" data-rel-y="-900" data-rotate="-180">
-            <h1 style="position:fixed; top: -290px; left:200px "data-rotate="-90">here is the <b>Magic</b></h1>
-                </div>
             <img width="800" height="700" data-rel-z="1000" src="images/diagrams-15 - stack.svg"   style="position: fixed;left:200px;bottom: -300px"
             />
-           
-            <div class="notes">
-    <pre>
-    $ ./bin/ycsb load mongodb-async -s -P workloads/throttlingtest -threads 30
-    $ cat workloads/throttlingtest 
-    mongodb.url=mongodb://throttl-4.henrikingo3.8300.mongodbdns.com:27017/test
-    mongodb.batchsize=100
-    recordcount=50000000
-    
-    
-    operationcount=1000
-    workload=com.yahoo.ycsb.workloads.CoreWorkload
-    
-    readallfields=true
-    
-    readproportion=0.5
-    updateproportion=0.5
-    scanproportion=0
-    insertproportion=0
-    
-    requestdistribution=zipfian
-    </pre>
-            </div>
         </div>
     
-        <div class="step" data-rel-x="0" data-rel-y="-900" data-rotate="-180">
-           <img src="images/ycsb-load-1.png" />
-        </div>
-    
-        <div class="step" data-rel-x="0" data-rel-y="-900" data-rotate="-180">
-           <img src="images/ycsb-load-2.png" />
-        </div>
-    
-        <div class="step" data-scale="3" data-rel-y="-1400" data-rotate="-180">
+        <div class="step"    data-scale="3" data-rel-y="-1400" data-rotate="-180">
             <h1>What did we learn?</h1>
             <ul>
-            <li>A naive insert / load test is not distributed well over all shards</li>
-            <li>With throttling on, balancer will not keep up = unbalanced cluster</li>
-            <li>With throttling off, balancer will keep up
-                <ul>
-                <li>Note: this is still an inefficient way of loading data into MongoDB</li>
-                <li>Point is just that the balancer is able to keep up</li>
-                </ul>
-            </li>
-            <li>The default in MongoDB 3.4 is <em>throttling off</em></li>
+            <li>Docker is essentially an Enviroment that holds many Images </li>
+            <li>An image is a snapshot of libraries and dependencies that are all dedicated to run a single program in the form of Containers</li>
+            <li>a Container is a running program that has its own isolated resources with the help of linux's kernel namespacing</li>
+                <li>when we install docker for windows/mac we also install a linux operating system</li>
             </ul>
+            <div id="ing">
+         
         </div>
-    
-        <div class="step title" id="parallel" data-rel-x="-4000" data-rel-y="0" data-rotate="-230">
-            <h1>5. Parallel chunk migrations</h1>
-        </div>
-    
+           
+        </div> 
+       
+        
+        <div class="step"  data-scale="3" data-rel-y="-1400" data-rotate="-180">
+                
+                <img width="800" height="700" data-rel-z="1000" src="images/net.svg"   style="position: fixed;left:200px;bottom: -300px"
+            />
+            </div> 
         <div class="step" style="text-align: center" data-rel-x="-4000" data-rel-y="-300" data-rotate="-280">
-            <img src="images/balancer-new-shard.svg" alt="MongoDB sharded cluster with a chunk migration happening"/>
-            <p>As with initial sync, adding a new shard to a cluster is easy. Just add an empty shard, and the balancer starts moving data to it.</p>
+            <div  class="substep">
+            <p class="substep"><p class="big"> Prepare for  <br><b style="left:1000px">      Lunch</b></p></p>
+                </div>
         </div>
-    
-        <div class="step" style="text-align: center" data-rel-x="-4000" data-rel-y="-300" data-rotate="-280">
-            <h1>At scale, ops become more interesting...</h1>
-            <img src="images/balancer-scale-10.svg" alt="MongoDB sharded cluster with 10 shards"
-                 style="position: inherit; top: 40px; left: 340px"/>
-            <img src="images/balancer-scale-32.svg" alt="MongoDB sharded cluster with 20 shards and 1 migration happening"
-                 style="position: inherit; top: 40px; left: 340px" class="substep" />
-            <p class="substep" style="margin-top: 260px;"><strong>MongoDB 3.2:</strong> Only 1 migration at a time.<br />
-                                                          All new shards but one remain empty. <br />
-                                                          The DBA just needs to wait... but how long?</p>
-            <p class="substep"><strong>MongoDB 3.4:</strong> N/2 migrations at a time.<br />
-                               Double nr of shards in same time as adding 1 shard.</p>
-            <img src="images/balancer-scale-34.svg" alt="MongoDB sharded cluster with 20 shards and 10 migrations happening"
-                 style="position: inherit; top: 40px; left: 340px" class="substep" />
-        </div>
-    
-        <div class="step" id="future" data-x="-30000" data-y="9000" data-z="8000" data-rotate-x="-95" data-rotate-y="-55" data-transition-duration="5000">
-            <h1>Future work</h1>
-            <ul>
-            <li><a href="https://jira.mongodb.org/browse/SERVER-27760"><strike>SERVER-27760</strike></a> Smarter, stateful orphan deletion (3.6)</li>
-            <li><a href="https://jira.mongodb.org/browse/SERVER-5931"><strike>SERVER-5931</strike></a> Secondary reads in a sharded cluster (3.6)</li>
-            <li><a href="https://jira.mongodb.org/browse/SERVER-20739">SERVER-20739</a> Make initial sync resilient to network/other failures</li>
-            <li><a href="https://jira.mongodb.org/browse/SERVER-9287">SERVER-9287</a> Split chunks on mongod, not mongos</li>
-            <li>Maybe make chunk migrations even faster?
-                <ul>
-                <li>Bulk inserts</li>
-                <li>More than one per shard</li>
-                </ul>
-    
+
+        <div  class="step" data-x="3000" data-y="1500" data-z="-1" data-scale="10"
+         style="pointer-events: none;" data-transition-duration="5000" data-autoplay="0.1">
+            
     </div>
     
+        
 
     
 
-    <div class="step" id="future" data-x="-30000" data-y="9000" data-z="8000" data-rotate-x="-95" data-rotate-y="-55" data-transition-duration="5000">
+    <div class="step" id="future" data-x="-30000" data-y="9000" data-z="8000" data-rotate-x="-95" data-rotate-y="-55" data-transition-duration="5000" data-autoplay="4.1">
         <h1><strong>Thank you</strong></h1>
-
+        <br>
+        <p><b>resources</b></p>
+        <ul>
+        <li><a href="https://kubernetes.io/"></a>level up your Docker game</li>
+        <li><a href="https://www.docker.com/">dockers official website</a> learn everything about the docker platform</li>
+        <li><a href="https://hub.docker.com/">dockerhub</a> the place where you can find any imaginable image</li>
 </div>
 <div id="impress-toolbar"></div>
 <div id="impress-help"></div>
