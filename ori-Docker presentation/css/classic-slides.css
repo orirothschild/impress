@@ -186,7 +186,7 @@ box-shadow: 15px 15px 51px 10px #000000, inset 4px 4px 15px 0px #000000, 5px 14p
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     
-    border-top: 20px solid #f00;
+    border-top: 80px solid #f00;
   }
   
   .arrow-right {
